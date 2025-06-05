@@ -1,41 +1,47 @@
-if(duckKey)
+function scr_ground_check()
 {
-	ducking = true;
-	jumping = false;
-	falling = true;
-}
-function scr_collision_check(){
-	if(place_meeting(x, y + 1, obj_block))
-	{
-	  // We're touching the ground
-	  vspd = 0;
-	  jumping = false;
-	  falling = false;
-  
-	  if(!duckKey) 
-		ducking = false;
+	jumpKey = keyboard_check_pressed(vk_space);
+	jumpKeyAlt = keyboard_check_pressed(vk_up);
+	duckKey = keyboard_check(vk_down);
 	
-	  // If the player wants to jump
-	  if((jumpKey || jumpKeyAlt) && !duckKey)
-	  {
-		jumping = true;
-		vspd = -jspd;
-	  }
-	}
-	else
+	if(duckKey)
 	{
-		if(ducking)
+		ducking = true;
+		jumping = false;
+		falling = true;
+	}
+
+		if(place_meeting(x, y + 1, obj_block))
 		{
-			vspd += grav * 4;	
+		  // We're touching the ground
+		  vspd = 0;
+		  jumping = false;
+		  falling = false;
+  
+		  if(!duckKey) 
+			ducking = false;
+	
+		  // If the player wants to jump
+		  if((jumpKey || jumpKeyAlt) && !duckKey)
+		  {
+			jumping = true;
+			vspd = -jspd;
+		  }
 		}
 		else
 		{
-			if(vspd < termVelocity)
-				vspd += grav;
+			if(ducking)
+			{
+				vspd += grav * 4;	
+			}
+			else
+			{
+				if(vspd < termVelocity)
+					vspd += grav;
 			
-			if(sign(vspd) == 1)
-				falling = true;
-		}
+				if(sign(vspd) == 1)
+					falling = true;
+			}
 	
-	}
+		}
 }

@@ -1,12 +1,15 @@
-if(jumping)
+function scr_jump_check()
 {
-	if(vspd < 0)
+	if(jumping)
 	{
-		jumping = true;
-	}
-	else
-	{
-	 jumping = false;
-	 falling = true;
+		if(vspd < 0)
+		{
+			jumping = true;
+		}
+		else
+		{
+		 jumping = false;
+		 falling = true;
+		}
 	}
 }
