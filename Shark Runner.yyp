@@ -35,6 +35,9 @@
   "name":"Shark Runner",
   "resources":[
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+    {"id":{"name":"obj_harpoon","path":"objects/obj_harpoon/obj_harpoon.yy",},},
+    {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},},
     {"id":{"name":"obj_shark","path":"objects/obj_shark/obj_shark.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_collision_check","path":"scripts/scr_collision_check/scr_collision_check.yy",},},
@@ -43,6 +46,8 @@
     {"id":{"name":"scr_jump_check","path":"scripts/scr_jump_check/scr_jump_check.yy",},},
     {"id":{"name":"scr_set_sprite","path":"scripts/scr_set_sprite/scr_set_sprite.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
+    {"id":{"name":"spr_harpoon","path":"sprites/spr_harpoon/spr_harpoon.yy",},},
+    {"id":{"name":"spr_pufferfish","path":"sprites/spr_pufferfish/spr_pufferfish.yy",},},
     {"id":{"name":"spr_shark_duck","path":"sprites/spr_shark_duck/spr_shark_duck.yy",},},
     {"id":{"name":"spr_shark_jump","path":"sprites/spr_shark_jump/spr_shark_jump.yy",},},
     {"id":{"name":"spr_shark","path":"sprites/spr_shark/spr_shark.yy",},},

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block",
+  "%Name":"obj_harpoon",
   "eventList":[],
   "managed":true,
-  "name":"obj_block",
+  "name":"obj_harpoon",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"spr_harpoon",
+    "path":"sprites/spr_harpoon/spr_harpoon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

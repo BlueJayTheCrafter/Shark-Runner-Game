@@ -1,4 +1,4 @@
-function scr_set_sprite( )
+function scr_set_sprite()
 {
 	if(jumping || falling)
 		sprite_index = spr_shark_jump;
